@@ -34,6 +34,8 @@ public class Main {
                 case 1:
                     System.out.println("Установите версию приложения для Android по ссылке");
                     break;
+                default:
+                    System.out.println("К сожалению, этот телефон не поддерживается");
             }
         }else {
             switch (clientOS) {
@@ -42,19 +44,19 @@ public class Main {
                     break;
                 case 1:
                     System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                default:
+                    System.out.println("К сожалению, этот телефон не поддерживается");
             }
         }
     }
     public static void task3(){
         System.out.println("Задание 3");
         int year = 2021;
-        if (year % 400 == 0){
+        if (year % 400 == 0 && year % 100 != 0 && year % 4 == 0){
             System.out.println(year + " год является високосным");
-        } else if (year % 100 == 0) {
+        }else {
             System.out.println(year + " год не является високосным");
-        } else if (year % 4 == 0) {
-            System.out.println(year + " год является високосным");
-        }else System.out.println(year + " год не является високосным");
+        }
     }
     public static void task4(){
         System.out.println("Задание 4");
@@ -97,6 +99,7 @@ public class Main {
                 System.out.println("Осень");
                 break;
             default:
+                System.out.println("Такого месяца не существует. Введите число от 1 до 12");
         }
     }
 }
