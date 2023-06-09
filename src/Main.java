@@ -7,10 +7,10 @@ public class Main {
         task5();
     }
 
-    public static void task1(){
+    public static void task1() {
         System.out.println("Задание 1");
         char clientOS = 1;
-        switch (clientOS){
+        switch (clientOS) {
             case 0:
                 System.out.println("Установите версию приложения для iOS по ссылке");
                 break;
@@ -22,12 +22,12 @@ public class Main {
         }
     }
 
-    public static void task2(){
+    public static void task2() {
         System.out.println("Задание 2");
         char clientOS = 1;
         int clientDeviceYear = 2015;
-        if (clientDeviceYear >= 2015){
-            switch (clientOS){
+        if (clientDeviceYear >= 2015) {
+            switch (clientOS) {
                 case 0:
                     System.out.println("Установите версию приложения для iOS по ссылке");
                     break;
@@ -37,7 +37,7 @@ public class Main {
                 default:
                     System.out.println("К сожалению, этот телефон не поддерживается");
             }
-        }else {
+        } else {
             switch (clientOS) {
                 case 0:
                     System.out.println("Установите облегченную версию приложения для iOS по ссылке");
@@ -49,35 +49,38 @@ public class Main {
             }
         }
     }
-    public static void task3(){
+
+    public static void task3() {
         System.out.println("Задание 3");
         int year = 2021;
-        if (year % 400 == 0 || year % 100 != 0 && year % 4 == 0){
+        if (year % 400 == 0 || year % 100 != 0 && year % 4 == 0) {
             System.out.println(year + " год является високосным");
-        }else {
+        } else {
             System.out.println(year + " год не является високосным");
         }
     }
-    public static void task4(){
+
+    public static void task4() {
         System.out.println("Задание 4");
         int deliveryDistance = 95;
         int delivryPeriod = 1;
-        if (deliveryDistance <=20){
+        if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: " + delivryPeriod);
-        }else if (deliveryDistance >20 && deliveryDistance < 60){
+        } else if (deliveryDistance > 20 && deliveryDistance < 60) {
             delivryPeriod += 1;
             System.out.println("Потребуется дней: " + delivryPeriod);
-        } else if (deliveryDistance >=60 && deliveryDistance <=100) {
+        } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
             delivryPeriod += 2;
             System.out.println("Потребуется дней: " + delivryPeriod);
-        }else if (deliveryDistance>100){
+        } else if (deliveryDistance > 100) {
             System.out.println("Доставки нет");
         }
     }
-    public static void task5(){
+
+    public static void task5() {
         System.out.println("Задание 5");
         int monthNumber = 12;
-        switch (monthNumber){
+        switch (monthNumber) {
             case 12:
             case 1:
             case 2:
