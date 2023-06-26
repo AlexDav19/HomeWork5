@@ -44,6 +44,7 @@ public class Main {
                     break;
                 case 1:
                     System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                    break;
                 default:
                     System.out.println("К сожалению, этот телефон не поддерживается");
             }
@@ -52,7 +53,7 @@ public class Main {
 
     public static void task3() {
         System.out.println("Задание 3");
-        int year = 2021;
+        int year = 100;
         if (year % 400 == 0 || year % 100 != 0 && year % 4 == 0) {
             System.out.println(year + " год является високосным");
         } else {
